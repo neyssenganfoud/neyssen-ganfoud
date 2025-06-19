@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Neyssen Ganfoud Portfolio</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <div class="navigation__logo">
+        <a href="index.html">NEYSSEN</a>
+      </div>
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="index.html" class="navigation__link active">Home</a></li>
+        <li class="navigation__item"><a href="intro.html" class="navigation__link">About</a></li>
+        <li class="navigation__item"><a href="service.html" class="navigation__link">Services</a></li>
+      </ul>
+      <div class="navigation__mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!--==================== HERO ====================-->
+    <section class="hero section hero--modern bg-gradient" id="home">
+      <div class="hero__background-shape"></div>
+      <div class="hero__container container grid">
+        <div class="hero__image-wrapper halo-effect">
+          <img src="assets/header.png" alt="Profile photo" class="hero__image hero__image--glass animate-fade-in" />
+        </div>
+        <div class="hero__content animate-slide-up glass-card">
+          <h1 class="hero__title">Computer Science Student</h1>
+          <h2 class="hero__subtitle">Looking for an internship to develop my skills and contribute to innovative
+            projects.</h2>
+          <p class="hero__description">
+            Passionate about web development, programming, and new technologies. Curious, motivated, and always eager to
+            learn, I am looking to join a dynamic team to take on new challenges and grow professionally.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn-primary hero__btn-cv animate-fade-in" href="#"><i class="ri-download-2-line"></i> Download
+              CV</a>
+            <div class="hero__social">
+              <a href="https://www.facebook.com/profile.php?id=100071462922982" target="_blank"
+                class="hero__social-link"><i class="ri-facebook-fill"></i></a>
+              <a href="https://linkedin.com/in/nissou-gnf-8a8aa1335/?trk=opento_sprofile_goalscard" target="_blank"
+                class="hero__social-link"><i class="ri-linkedin-fill"></i></a>
+              <a href="https://www.instagram.com/neyssen_gnf02/" target="_blank" class="hero__social-link"><i
+                  class="ri-instagram-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="section section--journey glass-card animate-slide-up" id="journey">
+      <h1 class="section__title">My Journey</h1>
+      <div class="journey__grid">
+        <div class="journey__column">
+          <div class="journey__header">
+            <i class="ri-graduation-cap-line"></i>
+            <h3>Education</h3>
+          </div>
+          <div class="journey__card">
+            <div class="journey__card-content">
+              <h4>EPI</h4>
+              <h5>1st year of engineering cycle</h5>
+              <p><i class="ri-calendar-fill"></i> 2024-2025</p>
+            </div>
+          </div>
+          <div class="journey__card">
+            <div class="journey__card-content">
+              <h4>IPEIM</h4>
+              <h5>2nd year of preparatory cycle</h5>
+              <p><i class="ri-calendar-fill"></i> 2023-2024</p>
+            </div>
+          </div>
+          <div class="journey__card">
+            <div class="journey__card-content">
+              <h4>IPEIM</h4>
+              <h5>1st year of preparatory cycle</h5>
+              <p><i class="ri-calendar-fill"></i> 2022-2023</p>
+            </div>
+          </div>
+          <div class="journey__card">
+            <div class="journey__card-content">
+              <h4>Technical Baccalaureate</h4>
+              <h5>Technical specialty</h5>
+              <p><i class="ri-calendar-fill"></i> 2020-2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="journey__column">
+          <div class="journey__header">
+            <i class="ri-briefcase-line"></i>
+            <h3>Experience and Projects</h3>
+          </div>
+          <div class="journey__card">
+            <div class="journey__card-content">
+              <h4>Internship at Leoni</h4>
+              <h5>Messaadine Industrial Zone</h5>
+              <p><i class="ri-calendar-fill"></i> 07/2024-08/2024</p>
+            </div>
+          </div>
+          <div class="journey__card">
+            <div class="journey__card-content">
+              <h4>University project with PHP and MySQL</h4>
+              <h5>Website for managing a café-restaurant</h5>
+              <p><i class="ri-calendar-fill"></i> 2024-2025</p>
+            </div>
+          </div>
+          <div class="journey__card">
+            <div class="journey__card-content">
+              <h4>Mobile application project</h4>
+              <h5>Booking electric charging stations (Figma & UML)</h5>
+              <p><i class="ri-calendar-fill"></i> 2025</p>
+            </div>
+          </div>
+          <div class="journey__card">
+            <div class="journey__card-content">
+              <h4>Angular Project</h4>
+              <h5>Movie theater website</h5>
+              <p><i class="ri-calendar-fill"></i>2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services glass-card animate-slide-up" id="service">
+      <div class="container">
+        <h1 class="section__title">What I Offer</h1>
+
+        <div class="services__container">
+          <div class="service__card">
+            <i class="ri-window-fill service__icon"></i>
+            <h4 class="service__title">Web Development</h4>
+            <p class="service__description">
+              I can develop simple and responsive websites using HTML, CSS, and JavaScript.
+              I focus on creating user-friendly interfaces and ensuring compatibility across different devices and
+              browsers.
+            </p>
+          </div>
+          <div class="service__card">
+            <i class="ri-store-line service__icon"></i>
+            <h4 class="service__title">Robotics</h4>
+            <p class="service__description">
+              I have a foundational understanding of robotics, including basic programming and assembling simple robotic
+              systems. I enjoy exploring how software can bring mechanical systems to life.
+            </p>
+          </div>
+          <div class="service__card">
+            <i class="ri-smartphone-line service__icon"></i>
+            <h4 class="service__title">Graphic Design</h4>
+            <p class="service__description">
+              I have basic skills in graphic design, allowing me to create clean and effective visuals using tools like
+              Photoshop or Canva. I enjoy designing logos, banners, and other digital content that combines creativity
+              with functionality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio glass-card animate-slide-up" id="portfolio">
+      <div class="container">
+        <h1 class="section__title">Recent Works</h1>
+        <div class="portfolio__grid modern-portfolio-grid">
+          <div class="portfolio__card modern-portfolio-card">
+            <img src="assets/project-1.jpg" alt="project" />
+            <div class="portfolio__overlay">
+              <i class="ri-eye-line"></i>
+              <h4 class="portfolio__card-title">Movie theater website</h4>
+            </div>
+          </div>
+          <div class="portfolio__card modern-portfolio-card">
+            <img src="assets/project-2.png" alt="project" />
+            <div class="portfolio__overlay">
+              <i class="ri-eye-line"></i>
+              <h4 class="portfolio__card-title">Mobile App UI</h4>
+            </div>
+          </div>
+          <div class="portfolio__card modern-portfolio-card">
+            <img src="assets/project-3.png" alt="project" />
+            <div class="portfolio__overlay">
+              <i class="ri-eye-line"></i>
+              <h4 class="portfolio__card-title">Website for managing a café-restaurant</h4>
+            </div>
+          </div>
+          <div class="portfolio__card modern-portfolio-card">
+            <img src="assets/project-5.png" alt="project" />
+            <div class="portfolio__overlay">
+              <i class="ri-eye-line"></i>
+              <h4 class="portfolio__card-title">Game Development Concept</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <p>&copy; 2025 NEYSSEN. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/profile.php?id=100071462922982" class="footer__social-link">Facebook</a>
+        <a href="https://www.linkedin.com/in/nissour-gnf-8a8aa1335/?trk=opento_sprofile_goiscard"
+          class="footer__social-link">LinkedIn</a>
+        <a href="https://www.instagram.com/neyssen_gnf02/" class="footer__social-link">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

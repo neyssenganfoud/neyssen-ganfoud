@@ -1,0 +1,186 @@
+/* Reset et styles de base */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: var(--line-height-base);
+  color: var(--text-dark);
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typographie */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Liens */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-normal);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Boutons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #8f5cf7 0%, #5eead4 100%);
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 2px 12px 0 rgba(143,92,247,0.10);
+  transition: all 0.25s cubic-bezier(.23,1.01,.32,1);
+  cursor: pointer;
+  gap: 0.7rem;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #5eead4 0%, #8f5cf7 100%);
+  color: #fff;
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 32px 0 rgba(143,92,247,0.18);
+}
+
+/* Conteneurs */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Sections */
+.section {
+  padding: var(--spacing-2xl) 0;
+}
+
+.section__header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.section__subheader {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Utilitaires */
+.text-center { text-align: center; }
+.text-primary { color: var(--primary-color); }
+.text-secondary { color: var(--secondary-color); }
+.text-light { color: var(--text-light); }
+
+.mt-1 { margin-top: var(--spacing-sm); }
+.mt-2 { margin-top: var(--spacing-md); }
+.mt-3 { margin-top: var(--spacing-lg); }
+.mt-4 { margin-top: var(--spacing-xl); }
+.mt-5 { margin-top: var(--spacing-2xl); }
+
+.mb-1 { margin-bottom: var(--spacing-sm); }
+.mb-2 { margin-bottom: var(--spacing-md); }
+.mb-3 { margin-bottom: var(--spacing-lg); }
+.mb-4 { margin-bottom: var(--spacing-xl); }
+.mb-5 { margin-bottom: var(--spacing-2xl); }
+
+/* Header modern glass effect */
+.header {
+  background: rgba(255,255,255,0.65);
+  box-shadow: 0 4px 24px 0 rgba(31,38,135,0.10);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 0 0 2rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Footer modern glass effect */
+.footer, .footer--wave {
+  background: rgba(255,255,255,0.65);
+  box-shadow: 0 -4px 24px 0 rgba(31,38,135,0.10);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 2rem 2rem 0 0;
+}
+
+/* Modern titles */
+h1, .section__title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 2.2rem;
+  color: var(--primary-color, #8f5cf7);
+  text-shadow: 0 2px 12px rgba(143,92,247,0.08);
+}
+h2, .section__subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #22223b;
+}
+
+/* Section fade-in animation */
+@keyframes sectionFadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.section, .glass-card, .footer, .header {
+  animation: sectionFadeIn 1.1s cubic-bezier(.23,1.01,.32,1);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  h1, .section__title { font-size: 2.1rem; }
+  h2, .section__subtitle { font-size: 1.3rem; }
+  .header, .footer, .footer--wave {
+    border-radius: 0 0 1.2rem 1.2rem;
+    padding: 0.5rem 0;
+  }
+  .btn, .button { padding: 0.7rem 1.2rem; font-size: 1rem; }
+} 
